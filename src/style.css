@@ -9,15 +9,106 @@
 }
 
 body {
+  font-family: "MD Primer Bold", Rubik, Lato, "Lucida Grande",
+    "Lucida Sans Unicode", Tahoma, Sans-Serif;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
   padding: 0;
   margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./img/layered-peaks-haikei.svg);
+  background-attachment: fixed;
+  /* strech background image to 100% */
+  background-size: cover;
 }
 
-@media only screen and (max-width: 1129px) {
+#title {
+  font-size: clamp(1.2rem, 1rem + 3.5vw, 3.5rem);
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
-@media only screen and (max-width: 945px) {
+.category-title {
+  font-size: 2rem;
+  color: whitesmoke;
+  font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
+.oneCategory {
+  width: 90vw;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 15;
+  background: linear-gradient(
+    135deg,
+    rgba(213, 213, 213, 0.4),
+    rgba(160, 159, 159, 0.2)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+}
+
+a {
+  display: grid;
+  grid-template-columns: 2fr 2fr 6fr;
+  min-height: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  border-radius: 15px;
+}
+
+a:hover {
+  background-color: rgb(100, 126, 255);
+}
+
+img {
+  height: 35px;
+}
+
+.items {
+  min-width: 200px;
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 1420px) {
+  a {
+    grid-template-columns: 3fr 3fr 5fr;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  a {
+    grid-template-columns: 4fr 3fr 4fr;
+  }
+
+  .oneCategory {
+    width: 85vw;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .oneCategory {
+    width: 80vw;
+    padding: 20px;
+  }
 }

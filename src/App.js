@@ -1,15 +1,17 @@
 import { render } from "react-dom";
 import { StrictMode } from "react";
-import Details from "./Details";
+import Details from "./componnents/Details";
 
 const App = () => {
   return (
     <StrictMode>
       <div>
         <header>
-          <h1 id="title">All of my links in one place</h1>
+          <h1 id="title">My link pool</h1>
         </header>
-        <Details />
+        <main>
+          <Details />
+        </main>
       </div>
     </StrictMode>
   );

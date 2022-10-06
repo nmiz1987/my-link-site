@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import OneCategory from "./OneCategory/OneCategory";
+import OneCategory from "./OneCategory";
 
 const Details = () => {
   const [list, setList] = useState([]);
@@ -39,8 +39,7 @@ const Details = () => {
       ) : status === "loading" ? (
         <h1>Loading...</h1>
       ) : (
-        // <h2>{list}</h2>
-        list.map((item, index) => <OneCategory key={index} item={item} />)
+        list.map((items, index) => <OneCategory key={index} items={items} />)
       )}
     </div>
   );
