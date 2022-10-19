@@ -5,7 +5,7 @@ To post new links, get existing links, update what is already there now, in shor
 
 I set up an express mini-server written in node.js (because I removed all the options except GET), uploaded it to the railway website.
 
-For database I use Monge atlas.
+For database I use Mongo atlas.
 
 This site loads all the data into one place, arranges everything by categories and displays everything.
 It's a content site that simply displays all the links in one place, every time the site is loaded it pulls all the links using the same API.
