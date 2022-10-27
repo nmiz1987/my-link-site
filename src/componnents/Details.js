@@ -13,7 +13,7 @@ const Details = () => {
     setStatus("loading");
 
     const res = await fetch(
-      "https://my-link-server-production.up.railway.app/my-links/all"
+      "https://orange-red-jaguar-cuff.cyclic.app/my-links/all"
     );
     const data = await res.json();
 
